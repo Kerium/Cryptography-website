@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Cryptography</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/caesarCipher.js"></script>
+</head>
+
+<body>
+    <div class="container" max-width="80%">
+        <nav class="navbar navbar-light navbar-expand-md" style="background-color: #cfe1d7;">
+            <div class="container-fluid"><a class="navbar-brand" href="#">Cryptography</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse"
+                    id="navcol-1">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="#">Caeser's Cipher</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="col">
+            <div role="tablist" id="accordion-1">
+                    <h4>Caesar Cipher</h4>
+                    <textarea  class="form-control" id="message" rows="3"></textarea>
+                    <input type="number" class="form-control" id="iterations" placeholder="Number of positions">
+                    <input class="form-control" id="result" placeholder="Result" readonly>
+                    <button type="button" class="btn btn-info" onclick="caesarCipher()">Encode</button>
+                    <button type="button" class="btn btn-info" onclick="DecipherCaesar()">Decode</button>
+                    <p>Is one of the simplest and widely known encryption techniques. It consists of substituting the letters in a word by&nbsp; another letter by some fixed number&nbsp;of positions down the alphabet.<br></p>
+                    <img src="assets/img/caeser%27s%20cipher.png" class="img-fluid" alt="Responsive image">                
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
