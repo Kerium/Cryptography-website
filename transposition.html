@@ -29,7 +29,8 @@
             <div role="tablist" id="accordion-1">
                     <h4>Columnar Transposition Cipher</h4>
                     <textarea  class="form-control" id="message" rows="3" placeholder="Message"></textarea>
-                    <input type="number" class="form-control" id="iterations" placeholder="Key">
+                    <p>This key need to be between 2 and half the size of your message (message= 30 => key= 15)</p>
+                    <input type="number" class="form-control" id="iterations" placeholder="Key (between: >2 and message/2)">
                     <input class="form-control" id="result" placeholder="Result" readonly>
                     <button type="button" class="btn btn-info" onclick="encryptTransp()">Encode</button>
                     <button type="button" class="btn btn-info" onclick="desencrypt()">Decode</button>

@@ -1,8 +1,8 @@
 
 function encryptTransp () {
     let newMessage = '';
-    let str = document.getElementById('message').value;
-    let key = parseInt(document.getElementById('iterations').value);
+    str = document.getElementById('message').value;
+    key = parseInt(document.getElementById('iterations').value);
 
     if (key >= str.length/2 || key < 2){
         return 'wrong key';
